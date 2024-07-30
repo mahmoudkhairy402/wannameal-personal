@@ -1,0 +1,40 @@
+.recipsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.noMealscontainer {
+  margin: 20px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.noMealscontainer .imageContainer {
+  width: 150px;
+}
+.noMealscontainer .imageContainer img {
+  width: 100%;
+}
+.noMealscontainer .mainTitle,
+.noMealscontainer .secondaryTitle {
+  max-width: 500px;
+}
+
+.mainTitle {
+  font-weight: 600;
+  z-index: 100;
+  text-transform: capitalize;
+}
+.mainTitle span {
+  color: var(--green);
+}
+
+.darkmodeChanges {
+  background-color: var(--text_gray);
+}

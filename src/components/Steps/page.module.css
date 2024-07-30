@@ -1,0 +1,50 @@
+.add_input {
+  background-color: #e6fee3;
+  border: none;
+  border-radius: 10px;
+  padding: 0.9rem;
+  color: var(--text_black);
+}
+
+.add_input:focus {
+  border: none;
+  outline: none;
+}
+
+.add_input::placeholder {
+  color: #848484;
+  text-transform: capitalize;
+  font-size: 0.7 rem;
+}
+
+.count_circle {
+  background-color: var(--green);
+  color: var(--text_white);
+  min-width: 40px;
+  min-height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 26px;
+}
+
+.icon {
+  min-width: 38px;
+  min-height: 38px;
+  margin: 0 0.3rem;
+}
+
+.add_btn {
+  background-color: var(--green);
+  color: var(--text_white);
+  max-width: 386px;
+  border: none;
+  padding: 10px 10px 10px 5px;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  margin: 1rem 0;
+  transition: 0.1s;
+}
+.add_btn:active {
+  background-color: var(--light-green);
+  box-shadow: inset 0px 0px 12px 0px #4a514c;
+}

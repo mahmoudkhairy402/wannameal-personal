@@ -1,0 +1,232 @@
+.nav {
+  backdrop-filter: blur(10px) !important;
+  background-color: inherit !important;
+  position: relative;
+}
+.logoContainer {
+  width: 50px;
+  margin-right: 60px;
+}
+.logoContainer img {
+  width: 100%;
+  object-fit: cover;
+}
+@media (max-width: 991px) {
+  .dragMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+.toggler {
+  box-shadow: none !important;
+  border: none;
+  outline: none;
+  color: var(--text_black) !important;
+  font-size: 23px;
+}
+
+.navForm {
+  width: 60%;
+  position: relative;
+}
+
+.navForm input {
+  width: 100%;
+  border-radius: 10px !important;
+  transition: 0.1s;
+  padding-left: 40px;
+  background-color: var(--body);
+  border: 0;
+  color: var(--text_black);
+}
+.navForm input::placeholder {
+  text-transform: capitalize;
+  opacity: 0.7;
+  font-size: 14px;
+  color: var(--grayWritingColor);
+}
+.navForm input:focus {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid var(--light-green) !important;
+  background-color: var(--text_white);
+  caret-color: var(--grayWritingColor);
+  color: var(--text_black);
+}
+
+.searchIcon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #999;
+}
+
+.authBtns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.authBtns .login,
+.authBtns .register {
+  padding: 0.5rem 1rem;
+  color: var(--light-green);
+  text-transform: capitalize;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.authBtns .login {
+  border: 1px solid var(--light-green);
+}
+.authBtns .login:hover {
+  border: 1px solid var(--light-green);
+  background-color: var(--light-green);
+  color: var(--text_white);
+  box-shadow: 0 5px 15px rgba(59, 59, 59, 0.17);
+}
+
+.authBtns .register:hover {
+  border: 1px solid var(--light-green);
+  box-shadow: 0 5px 15px rgba(59, 59, 59, 0.17);
+}
+
+.userData {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.userName {
+  text-transform: capitalize;
+  font-size: 24px;
+  max-width: 150px;
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.notification {
+  padding: 6px;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px;
+}
+.notification .icon {
+}
+
+.userImage {
+  width: 40px;
+  border-radius: 10px;
+  align-self: flex-end;
+}
+.userImage img {
+  border-radius: 10px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.sun,
+.moon {
+  padding: 7px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.sun {
+  background-color: #e98a2ff2;
+}
+.moon {
+  background-color: #5a5da0;
+}
+
+.leftBars {
+  padding: 7px;
+  border-radius: 50%;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  background-color: var(--light-green);
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+}
+.rightBars {
+  padding: 7px;
+  border-radius: 50%;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  background-color: var(--light-green);
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 50px;
+}
+
+.Aside {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--text_white);
+  color: var(--text_black);
+  width: 250px !important;
+}
+.Aside ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+}
+.Aside ul li {
+  width: 100%;
+  padding: 15px 0;
+  padding-left: 20px;
+  transition: 0.3s;
+  color: var(--text_black);
+  border-radius: 6px;
+  text-align: center;
+}
+.Aside ul li a {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+}
+.Aside ul li:hover {
+  background-color: var(--green);
+  color: #fff;
+}
+
+.logout {
+  width: 70%;
+  padding: 5px 10px;
+  text-transform: capitalize;
+  font-size: 20px;
+  background-color: var(--green);
+  border-radius: 6px;
+  border: none;
+  margin: 30px auto;
+  color: var(--text_black);
+  text-align: center;
+  cursor: pointer;
+}
+
+.logout:hover {
+  background-color: var(--light-green);
+}

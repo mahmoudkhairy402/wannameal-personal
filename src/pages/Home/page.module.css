@@ -1,0 +1,11 @@
+.mainTitle {
+  font-weight: 600;
+  z-index: 100;
+}
+.mainTitle span {
+  color: var(--green);
+}
+
+.darkmodeChanges {
+  background-color: var(--text_gray);
+}

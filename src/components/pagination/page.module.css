@@ -1,0 +1,12 @@
+.pagination_div {
+  margin: 1vw 2vw 1vw 3.5vw;
+}
+
+.number_btn button {
+  padding: 5px 14px;
+  color: var(--text_black);
+  border-radius: 3px;
+  background: #ffffff;
+  transition: 1s;
+  border: 1px solid #eff3fd;
+}

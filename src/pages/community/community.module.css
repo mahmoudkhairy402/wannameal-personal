@@ -1,0 +1,298 @@
+/* body {
+  background-color: var(--text_white);
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.communityContainer {
+  padding-top: 20px;
+  font-family: inter, poppins;
+}
+.Comunity {
+  display: grid;
+  grid-template-columns: 1.2fr 2.5fr 1.2fr;
+  gap: 10px;
+  height: 100vh;
+  /* overflow: hidden; */
+}
+
+/* .leftAside,
+.rightAside,
+.mainContent {
+} */
+.leftAside {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.leftAside .userInfoCard,
+.leftAside .followInfoCard {
+  width: 100%;
+  height: 290px;
+  border-radius: 6px;
+  background-color: var(--body);
+}
+
+.leftAside .userInfoCard {
+  height: 290px;
+}
+.leftAside .userInfoCard .userProfile {
+  height: 60%;
+}
+.leftAside .userInfoCard .userProfile .coverPhoto {
+  border-radius: 6px 6px 0px 0px;
+  width: 100%;
+  height: 40%;
+  overflow: hidden;
+}
+.leftAside .userInfoCard .userProfile .coverPhoto img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.leftAside .userInfoCard .userProfile .mainInfo {
+  display: flex;
+  flex-direction: column;
+  /* gap: 5px; */
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.leftAside .userInfoCard .userProfile .mainInfo .profileImage {
+  margin: -30px auto 0;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.leftAside .userInfoCard .userProfile .mainInfo .profileImage img {
+  width: 100%;
+  object-fit: cover;
+}
+.leftAside .userInfoCard .userProfile .mainInfo .name {
+  margin-top: 10px;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -1.2px;
+}
+.leftAside .userInfoCard .userProfile .mainInfo .email {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--grayWritingColor);
+}
+
+.leftAside .userInfoCard .follwInfo {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 25%;
+  position: relative;
+  padding: 10px;
+  border-top: 1px solid var(--grayWritingColor);
+  border-bottom: 1px solid var(--grayWritingColor);
+}
+.leftAside .userInfoCard .follwInfo::after {
+  position: absolute;
+  content: "";
+  background-color: var(--grayWritingColor);
+  width: 1px;
+  height: 80%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.leftAside .userInfoCard .follwInfo div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.leftAside .userInfoCard .follwInfo .followNum {
+  font-weight: 600;
+}
+.leftAside .userInfoCard .follwInfo .followTitle {
+  color: var(--grayWritingColor);
+  text-transform: capitalize;
+  letter-spacing: -1px;
+  font-size: 16px;
+}
+
+.profileLink {
+  color: var(--blue);
+  text-transform: capitalize;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: -1.2px;
+}
+
+.leftAside .followInfoCard {
+  padding: 15px;
+}
+.leftAside .followInfoCard .title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.leftAside .followInfoCard .userCards {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.showMore {
+  width: 100%;
+  text-align: left;
+  font-size: 18px;
+  letter-spacing: -1px;
+  color: var(--blue);
+  font-weight: 500;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.rightAside .followInfoCard {
+  background-color: var(--body);
+  border-radius: 6px;
+  padding: 15px;
+}
+.rightAside .followInfoCard .title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.rightAside .followInfoCard .userCards {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.showMore {
+  width: 100%;
+  text-align: left;
+  font-size: 18px;
+  letter-spacing: -1px;
+  color: var(--blue);
+  font-weight: 500;
+  margin-top: 10px;
+}
+.mainContent {
+  height: auto;
+  overflow: scroll;
+}
+.mainContent::-webkit-scrollbar {
+  display: none;
+}
+.mainContent .uploadPost {
+  border-radius: 6px;
+  padding: 15px;
+  background-color: var(--body);
+}
+.mainContent .uploadPost .profileImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.mainContent .uploadPost img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.mainContent .uploadPost input[type="text"] {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  border: 1px solid transparent;
+  color: var(--text_black);
+  background-color: var(--text_white);
+}
+.mainContent .uploadPost input[type="text"]:focus {
+  outline: none;
+  border: 1px solid var(--blue);
+}
+.mainContent .uploadPost input[type="file"] + label {
+  width: 49%;
+  border: 1px solid var(--blue);
+  border-radius: 6px;
+  color: var(--grayWritingColor);
+  padding: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  letter-spacing: -1.2px;
+  cursor: pointer;
+}
+
+.textInput {
+  position: relative;
+}
+
+.textInput .sendIcon {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-size: cover;
+}
+
+.textInput .sendIcon .postIcon {
+  cursor: pointer;
+  color: var(--light-blue);
+  background-image: linear-gradient(to right, var(--blue), var(--text_black));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.preview {
+  margin-top: 20px;
+}
+.preview .imgContainer,
+.preview .videoContainer {
+  width: 100%;
+  height: 180px;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  /* height: 150px; */
+}
+.preview .imgContainer img,
+.preview .videoContainer video {
+  width: 100%;
+  border-radius: 6px;
+  object-fit: cover;
+  /* height: auto; */
+}
+
+/* 0 to md screens */
+@media (max-width: 992px) {
+  .Comunity {
+    grid-template-columns: 1fr;
+    height: auto;
+    gap: 20px;
+  }
+
+  .leftAside {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+  }
+
+  .leftAside .userInfoCard,
+  .leftAside .followInfoCard {
+    width: 50%;
+    /* height: auto; */
+  }
+
+  .rightAside {
+    order: -1;
+    width: 100%;
+  }
+
+  .mainContent {
+    width: 100%;
+    order: 1;
+  }
+}

@@ -1,0 +1,17 @@
+.confirm_recipe {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1.5rem 0;
+}
+.confirm_btn {
+  background-color: var(--green);
+  color: var(--text_white);
+  border: none;
+  padding: 10px 13px;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+}

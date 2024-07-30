@@ -1,0 +1,24 @@
+.mainTitle {
+  font-weight: 600;
+  z-index: 100;
+  text-transform: capitalize;
+  width: 100%;
+}
+.mainTitle span {
+  color: var(--green);
+}
+
+.darkmodeChanges {
+  background-color: var(--text_gray);
+}
+
+.text .title {
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--text_black);
+}
+.text .desc {
+  font-size: 14px;
+  color: var(--grayWritingColor);
+  /* max-width: 95%; */
+}

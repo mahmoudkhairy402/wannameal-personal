@@ -1,0 +1,46 @@
+.cardContainer {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+
+  align-items: center;
+}
+.cardContainer .image {
+  border-radius: 50%;
+  width: 45px;
+}
+.cardContainer .image img {
+  border-radius: 50%;
+  width: 100%;
+}
+.cardContainer .text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  letter-spacing: -1px;
+}
+.cardContainer .text .name {
+  font-weight: 600;
+  color: var(--text_black);
+}
+.cardContainer .text .email {
+  color: var(--grayWritingColor);
+  font-size: 14px;
+  transform: scale(0.8) translate(-5px, -8px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 120px;
+}
+.cardContainer .btn {
+  background-color: var(--text_gray);
+  color: #fff;
+  padding: 2px 17px;
+  border-radius: 20px;
+  margin-left: auto;
+}
+
+.activeBtn {
+  background-color: var(--blue) !important;
+}

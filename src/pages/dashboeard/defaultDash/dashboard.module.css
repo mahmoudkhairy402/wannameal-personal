@@ -1,0 +1,30 @@
+.state_div {
+  border-radius: 10px;
+  background: var(--text_white);
+  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.25);
+}
+.card_image {
+  box-shadow: 4px 7px 13px 0px #9babff;
+  border-radius: 14px;
+  width: 60%;
+  height: auto;
+}
+.plus_icon {
+  width: 32px;
+  height: 32px;
+  padding: 5px;
+  border-radius: 8px;
+  background: var(--green);
+  box-shadow: 0px 4px 16px 0px rgba(90, 85, 210, 0.4);
+  color: var(--text_white);
+}
+.Team_Icon {
+  background-color: red;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: var(--light_burble);
+  box-shadow: 0px 4px 16px 0px rgba(159, 152, 254, 0.64);
+  padding: 8px;
+  color: var(--text_white);
+}

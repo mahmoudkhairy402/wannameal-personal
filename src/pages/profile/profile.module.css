@@ -1,0 +1,273 @@
+.portfolioContainer {
+  width: 100%;
+  background-color: var(--text-white) !important ;
+}
+
+.userData {
+  height: 160px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+}
+.userData .image {
+  width: 200px;
+  height: 200px;
+}
+.userData .info {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  height: 100%;
+}
+.info .personalData {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+}
+.info .personalData .userName {
+  font-weight: 600;
+  font-size: 22px;
+  text-transform: capitalize;
+  color: var(--text-black);
+}
+.info .personalData .accountName {
+  color: var(--grayWritingColor);
+}
+
+.followData {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.btns {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.btns .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--text_black);
+  color: var(--text_white);
+  border: 1px solid var(--text_white);
+  border-radius: 7px;
+  cursor: pointer;
+  width: 67px;
+  height: 40px;
+  transition: 0.3s;
+  width: fit-content;
+}
+
+.btns .btn:hover {
+  background-color: var(--body);
+  color: var(--text_black);
+  border: 1px solid var(--text_black);
+}
+
+.btns .settingIcon {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btns .settingIcon:hover {
+  transform: rotate(180deg);
+}
+
+.labels {
+  margin: 20px 0;
+  border-top: 1px solid var(--text_black);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.labels .saved,
+.labels .mine {
+  /* padding-top: 15px; */
+  padding: 15px 0 0 0;
+  cursor: pointer;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-transform: capitalize;
+  /* text-align: start; */
+}
+
+.labels .activeSaved {
+  position: relative;
+  transition: 0.3s;
+}
+.labels .activeSaved::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: -1px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--light-green);
+  z-index: 1000;
+  transform: translate(0px);
+  transition: 1s;
+}
+.labels .activeMine {
+  position: relative;
+  transition: 0.3s;
+}
+.labels .activeMine::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: -1px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--light-green);
+  z-index: 1000;
+  transform: translate(0px);
+  transition: 1s;
+}
+.labels .activeMine .icon,
+.labels .activeSaved .icon {
+  color: var(--light-green);
+}
+
+.overlay {
+  background-color: #000000a1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.settingUl {
+  background-color: var(--text_white);
+  width: 100%;
+  height: fit-content;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+@keyframes fadeIn {
+  0% {
+    top: 47vh;
+    opacity: 0;
+  }
+  100% {
+    top: 50vh;
+    opacity: 1;
+  }
+}
+
+.settingUl li {
+  margin: 0;
+  padding: 15px;
+  text-align: center;
+  text-transform: capitalize;
+  width: 100%;
+  color: var(--text_black);
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.settingUl li:not(:last-child) {
+  border-bottom: 0.5px solid var(--green);
+}
+.settingUl li:hover {
+  background-color: var(--body);
+}
+.premium {
+  color: gold;
+}
+
+.input input[type="checkbox"] {
+  display: none;
+}
+
+.input input[type="checkbox"] + label {
+  color: #000 !important;
+}
+.input input[type="checkbox"]:checked + label {
+  width: 100%;
+  height: 100%;
+  padding: 10px 20px;
+  text-transform: capitalize;
+  font-weight: 600;
+  background-color: rgba(168, 187, 164, 0.461);
+  border-radius: 6px;
+  border: 1px solid var(--text-white);
+  transition: 0.3s;
+}
+
+.checkicon {
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.checked {
+  border: 1px solid var(--green) !important;
+  transform: scale(1.02);
+}
+.checked .checkicon {
+  opacity: 0.8;
+  color: var(--green);
+}
+
+.inviteBody {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* align-items: center; */
+}
+.inviteBody h6 {
+  text-align: center;
+  font-weight: 600;
+  color: var(--text_black);
+}
+.inviteBody .links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  color: var(--text_black);
+}
+
+.linkField {
+  width: 90%;
+  border-radius: 6px;
+  background-color: var(--body);
+  padding: 4px 5px;
+  border: none;
+  outline: none;
+  color: var(--text_black);
+  background-color: var(--text-white);
+}
+/* .linkField:focus {
+    width: 90%;
+    border-radius: 10px;
+    background-color: var(--body);
+    padding: 5px;
+    border: none;
+    outline: none;
+  } */
+
+.darkModeChanges {
+  background-color: var(--text-white) !important;
+  opacity: 1;
+  color: var(--text-black) !important;
+}

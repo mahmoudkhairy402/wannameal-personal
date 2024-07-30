@@ -1,0 +1,131 @@
+.contactContainer {
+  width: 100%;
+  height: calc(100vh - 56px);
+  background-image: linear-gradient(
+    to bottom,
+    var(--light-green) 60%,
+    var(--text_white) 40%
+  );
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact {
+  height: 90%;
+  border-radius: 16px;
+  background-color: var(--text_white);
+  box-shadow: var(--grayWritingColor) 0px 0px 11px 6px;
+}
+
+.title {
+  position: relative;
+  width: 120px;
+  text-align: center;
+  text-transform: capitalize;
+  margin: 10px auto;
+  color: var(--light-green);
+  border-bottom: 2px solid var(--light-green);
+  padding: 2px;
+  font-size: 20px;
+}
+.box {
+  height: 90%;
+}
+.form .inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.form .inputs .input {
+  background-color: var(--body);
+  padding: 10px 20px 10px 20px;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+  color: var(--text_black);
+}
+
+.form .inputs .input:focus {
+  border: 1px solid var(--grayWritingColor);
+  box-shadow: none;
+  /* border: none; */
+}
+
+.form .inputs textarea {
+  height: 150px;
+  resize: none;
+  color: var(--text_black);
+}
+.form .inputs .input::placeholder,
+.form .inputs textarea::placeholder {
+  color: var(--grayWritingColor);
+}
+.submit {
+  background-color: var(--light-green);
+  color: var(--text_white);
+  border: 1px solid var(--text_white);
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 600;
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.submit:hover {
+  color: var(--light-green);
+  border: 1px solid var(--light-green);
+  background-color: transparent;
+  letter-spacing: 1px;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.information .location,
+.information .phone,
+.information .email {
+  color: var(--grayWritingColor);
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  flex-wrap: nowrap;
+}
+@media (max-width: 767px) {
+  .information .location,
+  .information .phone,
+  .information .email {
+    font-size: 14px;
+  }
+}
+
+.information .socialIcons {
+  color: var(--grayWritingColor);
+}
+
+.information .map {
+  width: 100% !important;
+  height: 200px !important;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+.information .map iframe {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 8px;
+  box-shadow: 0px 0px 11px 5px #ccc;
+}
